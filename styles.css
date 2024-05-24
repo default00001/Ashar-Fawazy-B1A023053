@@ -1,0 +1,85 @@
+/* Variabel CSS untuk menjaga konsistensi warna dan nilai lainnya */
+:root {
+    --primary-color: #28a745; /* Hijau */
+    --secondary-color: #ffc107; /* Kuning */
+    --text-color: #333;  /* Abu-abu tua untuk teks */
+    --light-gray: #f4f4f4;
+}
+
+body {
+    font-family: "Poppins", sans-serif; /* Font yang lebih modern */
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    line-height: 1.6; /* Jarak baris yang lebih nyaman */
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 960px; /* Lebih lebar untuk tampilan desktop yang lebih baik */
+    margin: 0 auto;
+    padding: 30px; /* Memberi ruang lebih pada konten */
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color); /* Menggunakan warna primer */
+    color: white;
+    padding: 40px 0; 
+    border-bottom: 5px solid var(--secondary-color); /* Tambahkan garis bawah */
+}
+
+header img {
+    width: 180px; /* Ukuran gambar profil yang lebih besar */
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover; /* Menjaga aspek rasio gambar */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+}
+
+section {
+    background-color: white;
+    margin-bottom: 30px; /* Spasi lebih besar antar bagian */
+    padding: 20px;
+    border-radius: 10px; /* Sudut lebih membulat */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan lebih halus */
+}
+
+section h2 {
+    background-color: var(--primary-color); /* Menggunakan warna primer */
+    color: white;
+    padding: 15px; /* Padding lebih besar untuk judul */
+    margin-top: 0;
+    border-radius: 10px 10px 0 0; /* Sudut atas membulat */
+    text-align: center;
+}
+
+/* Styling untuk list items */
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+section ul li::before {
+    content: "\2022"; /* Simbol bullet point */
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: var(--secondary-color); /* Menggunakan warna sekunder */
+}
+
+section.social a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+section.social a:hover {
+    text-decoration: underline;
+}
